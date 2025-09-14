@@ -34,7 +34,7 @@ st.markdown("""
 
 
 # --- MODEL LOADING ---
-MODEL_PATH = 'waste_classifier.keras'
+MODEL_PATH = 'garbage_classifier.keras'
 
 @st.cache_resource
 def load_model():
@@ -52,7 +52,7 @@ model = load_model()
 
 # --- IMPORTANT ---
 # You must update this list to match the class order from your training
-CLASS_NAMES = ['cardboard', 'glass', 'metal', 'plastic', 'trash'] #<-- UPDATE THIS!
+CLASS_NAMES = ['battery', 'biological', 'brown-glass', 'cardboard', 'clothes', 'green-glass', 'metal', 'paper', 'plastic', 'shoes', 'trash', 'white-glass'] #<-- UPDATE THIS!
 
 
 # --- IMAGE PREPROCESSING ---
